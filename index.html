@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>7 days</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -11,10 +11,892 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
     <main>
-      <section></section>
+      <section class="hero">
+        <div class="container">
+          <p class="start">
+            старт <span id="dateElement"></span>
+            <span id="monthElement"></span>
+          </p>
+          <h1 class="title">7 ДНІВ ДО СПОКОЙНОГО РАНКУ ТА ЧІТКОГО ПЛАНУ</h1>
+          <p class="desc">
+            Приведи життя в порядок за 7 днів: віднови режим, зменш хаос і
+            прокрастинацію, поверни ясність та контроль
+          </p>
+          <p class="text">без складних систем і насилля над собою</p>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/check-1x.png 1x,
+                    ./src/img/hero/check-2x.png 2x
+                  "
+                  width="20"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/hero/check-1x.png"
+                  alt="check image"
+                  width="20"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                Вже на 3-й день перестанеш зливати сили на хаос і навчишся
+                тримати день під контролем
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/check-1x.png 1x,
+                    ./src/img/hero/check-2x.png 2x
+                  "
+                  width="20"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/hero/check-1x.png"
+                  alt="check image"
+                  width="20"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                Освоїш просту аскезу, яка реально працює — навіть якщо раніше
+                все зривалось
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/check-1x.png 1x,
+                    ./src/img/hero/check-2x.png 2x
+                  "
+                  width="20"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/hero/check-1x.png"
+                  alt="check image"
+                  width="20"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                Почнеш день з ясною головою і чіткими діями замість кави й
+                скролінгу
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/check-1x.png 1x,
+                    ./src/img/hero/check-2x.png 2x
+                  "
+                  width="20"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/hero/check-1x.png"
+                  alt="check image"
+                  width="20"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                Отримаєш трекер прогресу, який мотивує і показує реальні зміни
+              </p>
+            </li>
+          </ul>
+          <a class="btn-link-container" href="#buy">
+            <p class="btn-link">Приєднатись за $7</p>
+            <div class="btn-star-container">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/star-1x.png 1x,
+                    ./src/img/hero/star-2x.png 2x
+                  "
+                  width="69"
+                  height="69" />
+                <img
+                  class="btn-star-image"
+                  src="./src/img/hero/star-1x.png"
+                  alt="star-sale"
+                  width="69"
+                  height="69"
+              /></picture>
+              <p class="btn-sale-text">
+                <span>-93%</span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="bonuses black">
+        <div class="container">
+          <h2 class="title">
+            Встигніть приєднатися до кінця зворотного відліку
+            <span>та отримати подарунки</span>
+          </h2>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="158"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus"
+                  width="158"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                <span>3 вправи</span> для стабільного ранку (аудіо + PDF)
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-02-1x.png 1x,
+                    ./src/img/bonuses/bonus-02-2x.png 2x
+                  "
+                  width="158"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-02-1x.png"
+                  alt="bonus"
+                  width="158"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                <span>Шаблон аскези</span> для впровадження без зривів
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-03-1x.png 1x,
+                    ./src/img/bonuses/bonus-03-2x.png 2x
+                  "
+                  width="158"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-03-1x.png"
+                  alt="bonus"
+                  width="158"
+                  height="auto"
+              /></picture>
+              <p class="item-text"><span>PDF-трекер</span> прогресу</p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-04-1x.png 1x,
+                    ./src/img/bonuses/bonus-04-2x.png 2x
+                  "
+                  width="158"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-04-1x.png"
+                  alt="bonus"
+                  width="158"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                <span>Діагностика</span> твого типу хаосу (форма + тест)
+              </p>
+            </li>
+          </ul>
+          <div id="countdown-one" class="countdown">
+            <div class="countdown-number">
+              <span class="hours countdown-time"></span>
+              <div class="countdown-label hours-label"></div>
+            </div>
+            <div><span class="countdown-doubledot">:</span></div>
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+              <div class="countdown-label minutes-label"></div>
+            </div>
+            <div><span class="countdown-doubledot">:</span></div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+              <div class="countdown-label seconds-label"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="for-whom">
+        <h2 class="title">Для кого цей курс?</h2>
+        <ul class="list">
+          <li class="list-item">
+            <p class="item-number">01</p>
+            <p class="item-text">
+              Прокидаєшся з думкою: <span>«Я нічого не встигаю»</span>
+            </p>
+          </li>
+          <li class="list-item">
+            <p class="item-number">02</p>
+            <p class="item-text">
+              <span>Залипаєш у телефоні</span> зранку, замість діяти
+            </p>
+          </li>
+          <li class="list-item">
+            <p class="item-number">03</p>
+            <p class="item-text">
+              Весь день в голові, але <span>без результату</span>
+            </p>
+          </li>
+          <li class="list-item">
+            <p class="item-number">04</p>
+            <p class="item-text">
+              Обіцяєш собі <span>почати «з понеділка»</span>, але не починаєш
+            </p>
+          </li>
+          <li class="list-item">
+            <p class="item-number">05</p>
+            <p class="item-text">
+              <span>Втомився від хаосу, залежностей</span> (кава, сигарети,
+              соцмережі, прокрастинація)
+            </p>
+          </li>
+          <li class="list-item">
+            <p class="item-number">06</p>
+            <p class="item-text">
+              Маєш купу знань, але <span>без ясного плану</span>
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="about-author">
+        <div class="author-image-box"><h2 class="title">Про автора</h2></div>
+        <div class="container">
+          <h3 class="name">Гіль Андрій</h3>
+          <p class="desc">
+            Я був на твоєму місці: хаос, зірвані режими, залежності.
+            <span
+              >За 9 років досліджень створив систему, яка реально працює</span
+            >
+            — без мотивації та складних марафонів
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              <p class="item-text">2000+ годин особистих практик</p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">3 рази знижував вагу на 20+ кг</p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">Півмарафон за 2 години з нуля за пів року</p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">
+                Випускник «Арканум» та «Міжнародної Академії Кабали»
+              </p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">
+                Результати учасників: стабільні ранки, менше прокрастинації,
+                ясний план життя
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="bg-connect">
+        <div class="bg-blur">
+          <section class="about-course">
+            <div class="container">
+              <h2 class="title">Про курс</h2>
+              <ul class="list">
+                <li class="list-item">
+                  <p class="item-text accent">
+                    7 коротких відео (5–7 хвилин) + Telegram-супровід
+                  </p>
+                </li>
+                <li class="list-item">
+                  <p class="item-text">Конкретні інструкції та завдання</p>
+                </li>
+                <li class="list-item">
+                  <p class="item-text">
+                    Прості вправи для стабільності та фокусу
+                  </p>
+                </li>
+                <li class="list-item">
+                  <p class="item-text">Трекер прогресу, який мотивує</p>
+                </li>
+                <li class="list-item">
+                  <p class="item-text">Доступ до чату підтримки</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="bonuses two">
+            <div class="container">
+              <h2 class="title">
+                Встигніть приєднатися до кінця зворотного відліку
+                <span>та отримати подарунки</span>
+              </h2>
+              <ul class="list">
+                <li class="list-item">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/bonuses/bonus-01-1x.png 1x,
+                        ./src/img/bonuses/bonus-01-2x.png 2x
+                      "
+                      width="158"
+                      height="auto" />
+                    <img
+                      class="bonus-image"
+                      src="./src/img/bonuses/bonus-01-1x.png"
+                      alt="bonus"
+                      width="158"
+                      height="auto"
+                  /></picture>
+                  <p class="item-text">
+                    <span>3 вправи</span> для стабільного ранку (аудіо + PDF)
+                  </p>
+                </li>
+                <li class="list-item">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/bonuses/bonus-02-1x.png 1x,
+                        ./src/img/bonuses/bonus-02-2x.png 2x
+                      "
+                      width="158"
+                      height="auto" />
+                    <img
+                      class="bonus-image"
+                      src="./src/img/bonuses/bonus-02-1x.png"
+                      alt="bonus"
+                      width="158"
+                      height="auto"
+                  /></picture>
+                  <p class="item-text">
+                    <span>Шаблон аскези</span> для впровадження без зривів
+                  </p>
+                </li>
+                <li class="list-item">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/bonuses/bonus-03-1x.png 1x,
+                        ./src/img/bonuses/bonus-03-2x.png 2x
+                      "
+                      width="158"
+                      height="auto" />
+                    <img
+                      class="bonus-image"
+                      src="./src/img/bonuses/bonus-03-1x.png"
+                      alt="bonus"
+                      width="158"
+                      height="auto"
+                  /></picture>
+                  <p class="item-text"><span>PDF-трекер</span> прогресу</p>
+                </li>
+                <li class="list-item">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/bonuses/bonus-04-1x.png 1x,
+                        ./src/img/bonuses/bonus-04-2x.png 2x
+                      "
+                      width="158"
+                      height="auto" />
+                    <img
+                      class="bonus-image"
+                      src="./src/img/bonuses/bonus-04-1x.png"
+                      alt="bonus"
+                      width="158"
+                      height="auto"
+                  /></picture>
+                  <p class="item-text">
+                    <span>Діагностика</span> твого типу хаосу (форма + тест)
+                  </p>
+                </li>
+              </ul>
+              <div id="countdown-two" class="countdown">
+                <div class="countdown-number">
+                  <span class="hours countdown-time"></span>
+                  <div class="countdown-label hours-label"></div>
+                </div>
+                <div><span class="countdown-doubledot">:</span></div>
+                <div class="countdown-number">
+                  <span class="minutes countdown-time"></span>
+                  <div class="countdown-label minutes-label"></div>
+                </div>
+                <div><span class="countdown-doubledot">:</span></div>
+                <div class="countdown-number">
+                  <span class="seconds countdown-time"></span>
+                  <div class="countdown-label seconds-label"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <section class="program">
+        <div class="container">
+          <h2 class="title">Програма курсу</h2>
+          <ul class="list">
+            <li class="list-item">
+              <p class="item-number">День 0</p>
+              <p class="item-text">Як підготуватись і дійти до кінця</p>
+            </li>
+            <li class="list-item">
+              <p class="item-number">День 1</p>
+              <p class="item-text">Старт: твоя точка А та перша дія</p>
+            </li>
+            <li class="list-item">
+              <p class="item-number">День 2</p>
+              <p class="item-text">Ранок без хаосу: простий ритуал</p>
+            </li>
+            <li class="list-item">
+              <p class="item-number">День 3</p>
+              <p class="item-text">Твоя перша аскеза — тримаємо дію</p>
+            </li>
+            <li class="list-item">
+              <p class="item-number">День 4</p>
+              <p class="item-text">Закриваємо “енергетичні діри”</p>
+            </li>
+            <li class="list-item">
+              <p class="item-number">День 5</p>
+              <p class="item-text">Як тримати вибране без насилля</p>
+            </li>
+            <li class="list-item">
+              <p class="item-number">День 6</p>
+              <p class="item-text">Відслідковуємо реальні зміни (трекінг)</p>
+            </li>
+            <li class="list-item">
+              <p class="item-number">День 7</p>
+              <p class="item-text">Підсумок і план далі</p>
+            </li>
+          </ul>
+          <p class="price"><span>$70</span>  $7</p>
+          <a class="buy-btn" href="">Приєднатись</a>
+          <p class="garant-text">
+            На курс діє гарантія безумовного повернення коштів протягом 14 днів
+          </p>
+        </div>
+      </section>
+      <section class="how-study">
+        <div class="container">
+          <h2 class="title">Як проходить <span>навчання?</span></h2>
+          <div class="wrapper-list">
+            <img
+              src="./src/img/study-arrow.svg"
+              alt="arrow"
+              class="study-arrow left arrow1"
+            />
+            <img
+              src="./src/img/study-arrow.svg"
+              alt="arrow"
+              class="study-arrow right arrow2"
+            />
+            <img
+              src="./src/img/study-arrow.svg"
+              alt="arrow"
+              class="study-arrow left arrow3"
+            />
+            <ul class="list">
+              <li class="list-item">
+                <p class="item-number">1</p>
+                <p class="item-text">
+                  Після оплати — автоматичний доступ до Telegram
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="item-number">2</p>
+                <p class="item-text">Новий урок щодня протягом 7 днів</p>
+              </li>
+              <li class="list-item">
+                <p class="item-number">3</p>
+                <p class="item-text">Завдання, матеріали, трекер одразу</p>
+              </li>
+              <li class="list-item">
+                <p class="item-number">4</p>
+                <p class="item-text">
+                  Доступ до курсу зберігається протягом 2 місяців після
+                  завершення
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="results">
+        <div class="container">
+          <h2 class="title">Результати після 7 днів</h2>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/results/result-01-1x.png 1x,
+                    ./src/img/results/result-01-2x.png 2x
+                  "
+                  width="100%"
+                  height="auto" />
+                <img
+                  class="result-image"
+                  src="./src/img/results/result-01-1x.png"
+                  alt="result"
+                  width="100%"
+                  height="auto"
+              /></picture>
+              <div class="text-wrapper">
+                <p class="item-text">Ранок без стресу і хаосу</p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/results/result-02-1x.png 1x,
+                    ./src/img/results/result-02-2x.png 2x
+                  "
+                  width="100%"
+                  height="auto" />
+                <img
+                  class="result-image"
+                  src="./src/img/results/result-02-1x.png"
+                  alt="result"
+                  width="100%"
+                  height="auto"
+              /></picture>
+              <div class="text-wrapper">
+                <p class="item-text">Чіткий план дій без зайвих думок</p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/results/result-03-1x.png 1x,
+                    ./src/img/results/result-03-2x.png 2x
+                  "
+                  width="100%"
+                  height="auto" />
+                <img
+                  class="result-image"
+                  src="./src/img/results/result-03-1x.png"
+                  alt="result"
+                  width="100%"
+                  height="auto"
+              /></picture>
+              <div class="text-wrapper">
+                <p class="item-text">Вихід із режиму виживання</p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/results/result-04-1x.png 1x,
+                    ./src/img/results/result-04-2x.png 2x
+                  "
+                  width="100%"
+                  height="auto" />
+                <img
+                  class="result-image"
+                  src="./src/img/results/result-04-1x.png"
+                  alt="result"
+                  width="100%"
+                  height="auto"
+              /></picture>
+              <div class="text-wrapper">
+                <p class="item-text">Реальний трекер прогресу, що мотивує</p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/results/result-05-1x.png 1x,
+                    ./src/img/results/result-05-2x.png 2x
+                  "
+                  width="100%"
+                  height="auto" />
+                <img
+                  class="result-image"
+                  src="./src/img/results/result-05-1x.png"
+                  alt="result"
+                  width="100%"
+                  height="auto"
+              /></picture>
+              <div class="text-wrapper">
+                <p class="item-text">
+                  Відчуття контролю і внутрішньої стабільності
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="bg-ellipse">
+        <section class="reviews">
+          <div class="container">
+            <h2 class="title">Відгуки учасників</h2>
+            <div class="swiper mySwiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-01-1x.png 1x,
+                        ./src/img/reviews/review-01-2x.png 2x
+                      "
+                      width="320"
+                      height="auto" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-01-1x.png"
+                      alt="review"
+                      width="320"
+                      height="auto"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-02-1x.png 1x,
+                        ./src/img/reviews/review-02-2x.png 2x
+                      "
+                      width="320"
+                      height="auto" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-02-1x.png"
+                      alt="review"
+                      width="320"
+                      height="auto"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-03-1x.png 1x,
+                        ./src/img/reviews/review-03-2x.png 2x
+                      "
+                      width="320"
+                      height="auto" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-03-1x.png"
+                      alt="review"
+                      width="320"
+                      height="auto"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-04-1x.png 1x,
+                        ./src/img/reviews/review-04-2x.png 2x
+                      "
+                      width="320"
+                      height="auto" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-04-1x.png"
+                      alt="review"
+                      width="320"
+                      height="auto"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-05-1x.png 1x,
+                        ./src/img/reviews/review-05-2x.png 2x
+                      "
+                      width="320"
+                      height="auto" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-05-1x.png"
+                      alt="review"
+                      width="320"
+                      height="auto"
+                  /></picture>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="questions">
+          <div class="container">
+            <h2 class="title">Поширені запитання</h2>
+            <div class="questions-container">
+              <ul class="questions-list list">
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">
+                      Подойдет ли мне курс, если я никогда не училась эзотерике?
+                    </p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        – Да, курс рассчитан как на новичков и на тех, кто
+                        чувствует способности, так и для тех, кто уже в теме
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">
+                      А если я уже что-то изучала, будет ли мне интересно?
+                    </p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        – Да! Курс поможет систематизировать знания и найти свой
+                        настоящий путь среди множества направлений.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">
+                      Можно ли учиться в удобное для меня время?
+                    </p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        – Да, все уроки открываются сразу, учиться можно в любое
+                        время и с любого устройства.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">
+                      Сколько времени нужно на курс?
+                    </p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        – Основная программа рассчитана на 3 дня, но доступ
+                        открыт на 90 дней — вы сможете проходить в своём темпе.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="questions-item">
+                  <div class="questions-title-container">
+                    <p class="questions-item-title">
+                      Что делать, если курс не подойдет?
+                    </p>
+                    <div class="questions-item-svg"></div>
+                  </div>
+                  <div class="questions-answer-container">
+                    <div class="questions-wrapper">
+                      <p class="questions-answer">
+                        – Вы можете запросить возврат средств в течение 14 дней
+                        после покупки — без вопросов и условий.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="fop-box">
+          <p class="name">фоп прізвище імʼя</p>
+          <p class="code">іпн 00000000</p>
+        </div>
+        <a class="mail-container" href="mailto:" rel="nofollow" target="_blank"
+          ><img
+            src="./src/img/footer-mail.svg"
+            width="15"
+            height="15"
+            alt="mail"
+          />пошта</a
+        >
+        <a
+          class="mail-container author-insta"
+          href="mailto:"
+          rel="nofollow"
+          target="_blank"
+          ><img
+            src="./src/img/author-insta.svg"
+            width="15"
+            height="15"
+            alt="mail"
+          />@svidomyi.rozvytok</a
+        >
+        <div class="telegram-links">
+          <a class="telegram-link" href="" target="_blank" rel="nofollow"
+            >telegram “СВІДОМИЙ розвиток”</a
+          >
+          <a class="telegram-link" href="" target="_blank" rel="nofollow"
+            >telegram “ґілко”</a
+          >
+        </div>
+        <div class="deals-box">
+          <a href="" target="_blank" rel="nofollow" class="deals-link public"
+            >публічна оферта
+          </a>
+          <a
+            href=""
+            target="_blank"
+            rel="nofollow"
+            class="deals-link confidence"
+            >політика конфідеційності</a
+          >
+        </div>
+        <a
+          href="https://www.instagram.com/lisabardadym"
+          class="disigner-box"
+          target="_blank"
+          rel="nofollow"
+        >
+          <img src="./src/img/insta.svg" alt="insta" width="25" />
+          <p class="dising">
+            розробка сайту <br />
+            <span>lisa bardadym</span>
+          </p>
+        </a>
+      </div>
+    </footer>
+    <script type="module" src="./src/js/changeDate.js"></script>
+    <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/swiper.js" type="module"></script>
+    <script src="./src/js/questions.js" type="module"></script>
   </body>
 </html>
