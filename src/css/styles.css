@@ -453,14 +453,6 @@ body {
   background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .about-author .author-image-box {
-    background-image: url(../img/author/image-2x.png);
-  }
-}
-
 .about-author .title {
   color: #fff;
   text-align: center;
@@ -472,7 +464,7 @@ body {
   letter-spacing: -1.8px;
   text-transform: uppercase;
 
-  margin-bottom: -18px;
+  margin-bottom: -28px;
 }
 
 .about-author .container {
@@ -491,6 +483,14 @@ body {
   margin-bottom: 4px;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .about-author .author-image-box {
+    background-image: url(../img/author/image-2x.png);
+  }
+}
+
 .about-author .desc {
   color: #000;
   text-align: center;
@@ -501,7 +501,7 @@ body {
   line-height: 110%; /* 17.6px */
   letter-spacing: -0.16px;
 
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 }
 
 .about-author .desc span {
@@ -535,11 +535,13 @@ body {
 
 .bg-connect {
   background: #090909;
+  border-radius: 30px 30px 0px 0px;
+  overflow: hidden;
 
   background-image: url(../img/about-course/bg-1x.jpg);
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 450px;
+  background-size: 400px;
 }
 
 .bg-blur {
@@ -586,7 +588,7 @@ body {
   padding: 28px 30px;
   border-radius: 15px;
   border: 1px solid #00907c;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(5px);
 }
 
@@ -724,6 +726,8 @@ body {
   );
   max-width: 260px;
   margin: 0 auto 12px;
+
+  animation: pulseScale 2000ms infinite;
 }
 
 .garant-text {
@@ -1214,4 +1218,18 @@ body {
   color: #0a9262;
 
   font-weight: 500;
+}
+
+.scroll-container {
+  display: none;
+}
+
+.scroll-container.js-show {
+  position: fixed;
+  display: block;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 30px;
+  width: 100%;
+  z-index: 999;
 }
