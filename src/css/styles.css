@@ -171,6 +171,12 @@ body {
   letter-spacing: -0.24px;
 }
 
+.form {
+  margin-bottom: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 /* btns */
 
 .btn-link-container {
