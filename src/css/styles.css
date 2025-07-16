@@ -85,46 +85,51 @@ body {
 
 .hero .title {
   text-align: center;
+  leading-trim: both;
+  text-edge: cap;
   font-family: 'Bebas Neue Cyrillic';
-  font-size: 42px;
+  font-size: 33px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 37.8px */
-  letter-spacing: -0.84px;
+  line-height: 90%; /* 29.7px */
+  letter-spacing: -0.66px;
 
   background: linear-gradient(90deg, #ff8410 0%, #ffaf1a 50%, #ff8410 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  margin-bottom: 10px;
 }
 
 .hero .desc {
   color: #fffbf7;
   text-align: center;
+  leading-trim: both;
+  text-edge: cap;
   font-family: 'Futura PT';
-  font-size: 17px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 500;
-  line-height: 100%; /* 17px */
-  letter-spacing: -0.17px;
+  line-height: 90%; /* 22.5px */
+  letter-spacing: -0.25px;
   text-transform: lowercase;
 
-  margin-bottom: 2px;
+  margin-bottom: 268px;
 }
 
 .hero .text {
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
   text-align: center;
+  leading-trim: both;
+  text-edge: cap;
   font-family: 'Futura PT';
-  font-size: 14px;
+  font-size: 17px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 14px */
-  letter-spacing: -0.42px;
+  font-weight: 450;
+  line-height: 90%; /* 15.3px */
+  letter-spacing: -0.51px;
 
-  margin-bottom: 280px;
+  max-width: 223px;
+  margin: 0 auto 20px;
 }
 
 .hero .list {
@@ -141,7 +146,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 156px;
-  height: 64px;
+  height: 50px;
   border-radius: 5px;
   border: 0.678px solid var(--Linear, #ff8410);
   background: rgba(0, 0, 0, 0.11);
@@ -151,6 +156,10 @@ body {
     0px 8px 3px 0px rgba(0, 0, 0, 0.01), 0px 5px 3px 0px rgba(0, 0, 0, 0.04),
     0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.07);
   backdrop-filter: blur(5.2083330154418945px);
+}
+
+.hero .list-item:last-child {
+  width: 100%;
 }
 
 .hero .item-image {
@@ -163,12 +172,14 @@ body {
 .hero .item-text {
   color: #fffbf7;
   text-align: center;
+  leading-trim: both;
+  text-edge: cap;
   font-family: 'Futura PT';
-  font-size: 12px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 450;
-  line-height: 95%; /* 11.4px */
-  letter-spacing: -0.24px;
+  line-height: 95%; /* 12.35px */
+  letter-spacing: -0.26px;
 }
 
 .form {
@@ -241,6 +252,22 @@ body {
   font-size: 21px;
   font-weight: 600;
   letter-spacing: -0.65px;
+}
+
+.hero .btn-text {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: 'Futura PT';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.42px;
+
+  max-width: 287px;
+  margin: 15px auto 0;
 }
 
 /* bonuses */
